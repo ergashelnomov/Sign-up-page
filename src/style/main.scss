@@ -16,9 +16,10 @@ body {
   align-items: center;
   padding: 0 20px;
   .container {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-template-columns: minmax(327px, 525px) minmax(327px, 540px);
     gap: 45px;
     .info-section {
       max-width: 525px;
@@ -46,8 +47,8 @@ body {
       gap: 24px;
       .cost-info {
         width: 100%;
-        border-radius: 10px;
         max-width: 540px;
+        border-radius: 10px;
 
         box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
         background: #5e54a4;
@@ -65,6 +66,7 @@ body {
         }
       }
       .form {
+        width: 100%;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
@@ -73,7 +75,6 @@ body {
         background: #fff;
         padding: 40px;
 
-        width: 100%;
         input {
           margin-top: 20px;
           padding: 15px 32px;
@@ -159,8 +160,10 @@ body {
     padding: 88px 24px 68px 24px;
     height: 100%;
     .container {
-      flex-direction: column;
+      justify-items: center;
       gap: 64px;
+      grid-template-columns: minmax(327px, 540px);
+      grid-template-rows: repeat(2, auto);
       .info-section {
         max-width: 327px;
         text-align: center;
@@ -172,6 +175,7 @@ body {
         }
       }
       .sign-up_section {
+        width: 100%;
         .cost-info {
           padding: 18px 66px;
         }
