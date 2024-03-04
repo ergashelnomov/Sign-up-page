@@ -170,7 +170,7 @@ body {
   margin: 0;
 }
 .wrapper .container .sign-up_section .form input:focus {
-  border: 1px solid #ff7979;
+  border: 2px solid #ff7979;
 }
 .wrapper .container .sign-up_section .form label {
   display: none;
@@ -252,8 +252,12 @@ body {
   }
   .wrapper .container .sign-up_section .form {
     padding: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .wrapper .container .sign-up_section .form input {
+    width: 100%;
     margin-top: 16px;
     padding: 15px 19px;
   }
